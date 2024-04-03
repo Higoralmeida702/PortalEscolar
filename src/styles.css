@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-vermelho: #B91C1C
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.headerNavegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin: 20px 100px;
+}
+
+.headerNavegacao ul {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 80px;
+    list-style: none;
+}
+
+.menu-item a {
+    cursor: pointer;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.menu-item a:hover {
+    color: red;
+}
+
+.menu-item a:focus:after,
+.menu-item a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.menu-item a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -10px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-vermelho);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
