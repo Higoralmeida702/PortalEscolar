@@ -1,28 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
-    --color-vermelho: #B91C1C
+    --color-vermelho: #B91C1C;
+    --color-dark-10: #111827;
+    --color-dark-20: #353436;
+    --color-dark-30: #F3F4F6;
+    --color-dark-40: #FFFFFF;
 }
 
 
 * {
     margin: 0;
     padding: 0;
-}
-
-.headerNavegacao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-    margin: 20px 100px;
+    box-sizing: border-box;
 }
 
 .headerNavegacao ul {
     display: flex;
     align-items: center;
-    justify-self: center;
-    gap: 80px;
+    justify-content: center;
+    gap: 90px;
     list-style: none;
 }
 
