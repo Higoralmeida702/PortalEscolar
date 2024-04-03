@@ -1,0 +1,28 @@
+.containerCursos {
+    display: flex;
+    justify-content: center;
+}
+
+.cursosTecnicos h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    font-family: "Muktar", sans-serif;
+}
+
+.containerCursosGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 20px;
+}
+
+.containerCursosGrid span {
+    background-color: var(--color-dark-30);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
