@@ -1,3 +1,4 @@
+import EstagiosENoticias from "./estagiosENoticias"
 import CursosTecnicos from "./cursosTecnicos"
 import SubHeader from "./subHeader"
 
@@ -6,6 +7,7 @@ const Inicio = () => {
         <div>
         <SubHeader/>
         <CursosTecnicos/>
+       <EstagiosENoticias/>
         </div>
     )
 }
