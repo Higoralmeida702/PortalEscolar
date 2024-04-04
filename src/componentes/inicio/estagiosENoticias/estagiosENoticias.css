@@ -46,6 +46,7 @@
 }
 .sessaoNoticiasConteudo {
     width: 350px;
+    background-color: var(--color-dark-30);
 }
 
 .espacoImagem {
@@ -54,8 +55,8 @@
     background-color: var(--color-vermelho)
 }
 
-.sessaoNoticiasConteudo h2{
-    margin: 20px 0;
+.sessaoNoticiasConteudo h2, p{
+    margin: 20px 10px;
 }
 
 .btnVerMaisNoticias {
