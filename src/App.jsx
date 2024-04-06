@@ -2,12 +2,14 @@ import React from 'react';
 import './styles.css';
 import { BrowserRouter, Routes, Link, Route } from 'react-router-dom';
 import Inicio from './componentes/inicio';
+import Cursos from './componentes/cursos/cursos';
+import Noticias from './componentes/noticias';
 
 
 function App() {
   return (
     <div>
-      <div className='headerNavegacao'>
+    <div className='headerNavegacao'>
       <BrowserRouter>
         <ul>
       <img src="./images/logo3.png" alt="" />
@@ -23,11 +25,13 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Inicio/>} />     
-          <Route path="/inicio" element={<Inicio/>} />      
+          <Route path="/inicio" element={<Inicio/>} />    
+          <Route path="/cursos" element={<Cursos/>} /> 
+          <Route path="/noticias" element={<Noticias/>}/>
         </Routes>
       </BrowserRouter>
       </div>
-    </div>
+      </div>
   );
 }
 
